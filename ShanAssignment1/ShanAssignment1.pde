@@ -1,3 +1,4 @@
+
 //setup;
 size(400, 400);
 background(255);
@@ -5,20 +6,21 @@ background(255);
 //shapes;
 noStroke();
 
-fill(20,35,100);
-triangle(0,0,width,0,width/2,height/2);
-fill(200,0,0);
+fill(180,0,0);
 triangle(0,0,0,height,width/2,height/2);
-fill(0,200,0);
+fill(0,0,120);
+triangle(0,0,width,0,width/2,height/2);
+fill(0,200,100);
 triangle(300,100,width,0,width,height/2);
-fill(200,100,0);
-triangle(width/2,height,width,height/2,width,height);
-fill(100,100,100);
-triangle(width/2,height/2,100,300,300,300);
 
-fill(232,229,108);
-ellipse(300,height/2,141.4,141.4);//100*Math.sqrt(2)?
+fill(255,255,120);
+quad(100,300,300,300,width/2,height,0,height); // parallelogram
+fill(100,200,200,90);
+quad(width/2,height/2,300,height/4,width,height/2,300,300); //square
 
-fill(122,212,180);
+fill(200); 
+arc(width,height,282.8,282.8,0,2*PI); // quarter circle
+
+fill(50,90);
 rectMode(CORNERS);
-rect(380,300,width,height,150);
+rect(width,300,380,height,5);
